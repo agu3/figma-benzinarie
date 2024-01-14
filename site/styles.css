@@ -1,0 +1,375 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-height: 100vh;
+}
+.main {
+    padding: 0px 40px;
+    margin: 0px 150px;
+}
+
+nav {
+    width: 100%;
+    background-color: white;
+    margin: 25px 0;
+}
+h2{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+h3{
+    color: rgba(33, 41, 211, 1);
+    position: absolute;
+    padding-top: 5px;
+    font-size: 30px;
+    padding-left: 25px;
+}
+nav ul {
+    width: 97%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li {
+    height: 50px;
+    border-radius: 15px;
+}
+
+nav a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+nav a:hover {
+    background-color: aquamarine;
+    border-radius: 15px;
+}
+.icons-pp:hover{
+    background-color: aquamarine;
+
+}
+.slider {
+    display: none;
+}
+
+.activ {
+    background-color: #3498db;
+    color: #ffffff;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgb(134, 107, 107);
+    backdrop-filter: blur(10px);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li {
+    width: 100%;
+}
+
+.sidebar a {
+    width: 100%;
+}
+
+.buton-meniu {
+    display: none;
+}
+.img_fundal {
+    width: 100%;
+    height: 600px;
+    padding-bottom: 30px;
+
+}
+
+.icons-pp {
+    background-color: rgba(217, 217, 217, 1);
+    width: 260px;
+    height: 140px;
+    justify-content: center;
+    position: relative;
+    border-radius: 15px;
+
+}
+.icons-row {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px 0;
+}
+.logo {text-align: center;
+    padding: 20px 0;
+}
+
+.yellowdiv{
+    width: auto;
+    height: 7px;
+    background-color: yellow;
+    margin: 50px 0 30px 0;
+}
+
+@media (min-width: 1920px) {
+
+    .hideOnMobile {
+        display: block;
+    }
+    
+    .buton-meniu {
+        display: none;
+    }
+        .img-for-small {
+            display: none;
+        }
+
+    .slider {
+        display: block;
+        margin: 50px auto;
+        width: 50%;
+        height: 550px;
+    }
+}
+
+@media (min-width:431px) and (max-width: 1024px){
+    body{
+        min-height: 100vh;
+    }
+        h3 {
+            width: 150px;
+            height: auto;
+            font-size: 24px;
+            padding: 0;
+            display: inline-block;
+        }
+    nav li{
+        width: auto;
+    }
+        .no-tel-tablet{
+            display: none;
+        }
+    .img-for-small{
+        display: none;
+    }
+    h3{
+        padding-left: 30px;
+    }
+    
+        .div_contact-p {
+            display: none;
+        }
+    
+        .p-contact-info {
+            margin-left: 0;
+            margin-top: 10px;
+        }
+    
+        .div_contacte {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        
+}
+
+@media (max-width: 430px){
+    .main{
+        margin: 0;
+    }
+    h3{
+        width: 150px;
+        height: auto;
+        font-size: 24px;
+        padding-left: 20px;
+        display: inline-block;
+    }
+    
+    .buton-meniu {
+        display: block;        
+    }
+    
+    .hideOnMobile {
+        display: none;
+    }
+    .img_fundal {
+    width: 100%;
+    height: 300px;
+    padding-bottom: 30px;
+
+}
+.text_img {
+    flex-direction: column;
+    text-align: center;
+}
+.img-text-left{
+    float: none;
+}
+#margin{
+    margin: 0;
+}
+.p-contact {
+    margin-right: 10px;
+}
+.img-for-large{
+    display: none;
+}
+.img-text {
+    float: none;
+    margin-top: 20px;
+}
+    .sidebar {
+        width: 100%;
+    }
+    .icons-row{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0;
+    }
+    .icons-pp{
+        margin: 0 auto;
+    }
+    .text_img{
+        display: none;
+    }
+    .social-media-icons {
+    flex-direction: column;
+    align-items: flex-end;
+    }
+    form{
+        max-width: 100%;
+    }
+    .no-tel-tablet {
+        display: none;
+        }
+        .link-nivel3 p {
+            margin:  0 ;
+        }
+}
+
+.text_img{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: 20px auto;
+    text-align: justify;
+}
+.text{
+    margin: 20px 20px;
+
+}
+
+.img-text{
+    width: 300px;
+    height: 160px;
+    float: right;
+    border-radius: 10px;
+}
+.img-text-left{
+    float: left;
+    border-radius: 10px;
+}
+.social-media-icons{display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 10px;
+}
+.footer{
+    display: flex;
+        justify-content: space-between;
+        align-items: center;
+}
+
+.footer div p {
+    margin: 5px 0;
+}
+.center_img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    width: 40%;
+}
+
+.link-nivel3{
+    text-decoration: none;
+    color: black;
+    margin: 10px 0;
+}
+.link-nivel3 p:hover{
+    background-color: aquamarine;
+    border-radius: 5px;
+}
+.link-nivel3 p{
+    margin: 36px 0 0 150px;
+}
+.p-contact{
+    display: inline-block;
+    margin-right: 300px;
+}
+
+.div_contact-p{
+    margin-top:50px ;
+}
+
+.div_contacte{
+    margin-top:20px;
+}
+
+.p-contact-info{
+    display: inline-block;
+    
+}
+
+form {
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+}
+
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.error {
+    color: red;
+}

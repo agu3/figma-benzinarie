@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="x-icon" href="poze/logo.jpg" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="../main.js"></script>
+    <title>Contact</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h3>FUELHUB EXPRESS</h3>
+        <ul class="sidebar">
+          <li onclick="hideSidebar()">
+            <a href="#"
+              ><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+              </svg>
+            </a>
+          </li>
+          <li><a href="paginaPrincipala.html">Pagina Principală</a></li>
+          <li><a href="statiileNoaster.html">Statiile Noastre</a></li>
+          <li><a href="solutiiAfacere.html">Solutii Pentru Afacerea Ta</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <img class="hideOnMobile" src="poze/809722_gas_gas station_oil_petrol_petrol station_icon.png" alt="logo" />
+        </ul>
+        <ul>
+          <li class="hideOnMobile"><a href="paginaPrincipala.html">Pagina Principală</a></li>
+          <li class="hideOnMobile"><a href="statiileNoaster.html">Statiile Noastre</a></li>
+          <li class="hideOnMobile"><a href="solutiiAfacere.html">Solutii Pentru Afacerea Ta</a></li>
+          <li class="hideOnMobile activ"><a href="contact.html">Contact</a></li>
+          <img src="poze/809722_gas_gas station_oil_petrol_petrol station_icon.png" alt="logo" />
+          <li class="buton-meniu" onclick="showSidebar()">
+            <a href="#"
+              ><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="yellowdiv" style="margin: 0"></div>
+    <div class="main">
+      <h2 style="margin-top: 50px; margin-bottom: 0">Contact</h2>
+      <div class="yellowdiv no-tel-tablet" style="margin: 0; width: 95px"></div>
+      <div class="div_contact-p no-tel-tablet">
+        <h4 class="p-contact" style="margin-left: 50px">Departament</h4>
+        <h4 class="p-contact" style="margin-left: 200px">Telefon/E-mail</h4>
+      </div>
+      <div class="yellowdiv" style="margin: 0"></div>
+      <div class="div_contacte">
+        <p class="p-contact">Stațiile FUELHUB</p>
+        <div class="p-contact-info">
+          <p id="margin" class="p-contact">Tel: 0800 0800 11</p>
+          <p>E-mail: linia.albastra@fuelhub.com/e-mail</p>
+        </div>
+      </div>
+      <div class="div_contacte">
+        <p class="p-contact" style="margin-right: 258px">Carduri Persoane Juridice</p>
+        <div class="p-contact-info">
+          <p id="margin" class="p-contact">Tel: 0800 0800 77</p>
+          <p>E-mail: fuelhub@express.com</p>
+        </div>
+      </div>
+      <div class="div_contacte">
+        <p class="p-contact" style="margin-right: 284px">Relația cu investitorii</p>
+        <div class="p-contact-info">
+          <p id="margin" class="p-contact">Tel: 0800 8000 64</p>
+          <p>E-mail: investor.relations.petrom@fuelhub.com</p>
+        </div>
+      </div>
+      <div class="div_contacte">
+        <p class="p-contact" style="margin-right: 320px">Resurse Umane</p>
+        <div class="p-contact-info">
+          <p id="margin" class="p-contact">Tel: 0372 824 444</p>
+          <p>E-mail: jobs.info@fuelhub.com</p>
+        </div>
+      </div>
+      <div class="div_contacte">
+        <p id="margin" class="p-contact" style="margin-right: 180px">Carburanți en-gros Persoane Juridice</p>
+        <div class="p-contact-info">
+          <p id="margin" class="p-contact">Tel: +40 (21) 40 22250</p>
+          <p>E-mail: comercial@fuelhub.com</p>
+        </div>
+      </div>
+      <h4 style="text-align: center; margin-top: 40px">
+        Sediul Central: FuelHub City, Strada Coralilor, nr. 22, Sector 1, cod poștal 013329, București, România
+      </h4>
+    </div>
+    <div class="yellowdiv"></div>
+    <form action="https://formspree.io/f/mqkraqvb" method="POST" method="POST" onsubmit="return validateForm()">
+      <label for="name">Nume:</label>
+      <input type="text" id="name" name="name" />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" />
+
+      <label for="message">Mesaj:</label>
+      <textarea id="message" name="message" rows="4"></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+    <div class="yellowdiv"></div>
+    <footer class="main">
+      <div class="footer">
+        <div>
+          <p>PROTECTIA DATELOR</p>
+          <div class="text_img" style="margin: 0; justify-content: left">
+            <img src="poze/134146_mail_email_icon.png" alt="" width="24" height="22" />
+            <p style="margin-left: 3px">fuelhub@express.com</p>
+          </div>
+          <div class="img-for-small">
+            <p>Termene si Conditii</p>
+            <p>Politica de Confidentialitate</p>
+            <p>© 2023 FUELHUB EXPRESS MARKETING SRL</p>
+          </div>
+          <p class="img-for-large">© 2023 FUELHUB EXPRESS MARKETING SRL</p>
+        </div>
+        <div>
+          <div class="social-media-icons">
+            <figure><img src="poze/104498_facebook_icon.png" alt="" /></figure>
+            <figure><img src="poze/3146788_youtube_logo_icon.png" alt="" /></figure>
+            <figure><img src="poze/1298747_instagram_brand_logo_social media_icon.png" alt="" /></figure>
+          </div>
+          <div class="img-for-large">
+            <p>Termene si Conditii</p>
+            <p>Politica de Confidentialitate</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
